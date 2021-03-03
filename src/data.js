@@ -1,12 +1,12 @@
-// estas funciones son de ejemplo
+// Hacer funcion obtenerCampeones 
+export const obtenerCampeones = (lol) => {
 
-export const example = () => {
+
+
+
   return 'example';
 };
 
 export const anotherExample = () => {
   return 'OMG';
 };
-
-
-

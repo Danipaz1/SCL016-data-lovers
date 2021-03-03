@@ -1,6 +1,17 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import lol from './data/lol/lol.js';
 
-console.log(example, data);
+// Dar funcionalidad a los botones de categoria de campeones
+//   Usar eventListener para agregar click y llamar a la funcion obtener campeones
+
+
+
+
+
+// TODO: Buscar campeones por tipo
+// Impotar data.js en main.js y pasarla al eventListener
+
+
+
+// Mostrar categoria de campeones seleccionada
+
+console.log(lol);
