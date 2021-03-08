@@ -9,9 +9,7 @@ let champFilter = [];
       }
     }
   }
-  console.log(champFilter);
-
-  return 'example';
+  return champFilter;
 };
 
 export const anotherExample = () => {

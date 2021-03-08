@@ -5,12 +5,50 @@ import lol from './data/lol/lol.js';
 //   Usar eventListener para agregar click y llamar a la funcion obtener campeones
 
 const onClickHandlerAssassin = () => {
-    obtenerCampeones(lol.data,'Assassin');
+    let champFilter = obtenerCampeones(lol.data,'Assassin');
 
-    // redirección a página 2, mostrar grupo de campeones
+    document.getElementById("championsCategory").style.visibility = "hidden";
+    document.getElementById("championList").style.visibility = "visible";
+
+    //Creando segunda pantalla de campeones según categoría
+    // Creando etiqueta input
+    for (let i = 0; i < champFilter.length; i++) {
+        const item = document.createElement("INPUT");
+        item.setAttribute("type", "image");
+        item.setAttribute("id", "champ" + i);
+        item.setAttribute("src", champFilter[i].img);
+        document.getElementById("championList").appendChild(item);  
+    }
+
+    // mostrar grupo de campeones
+   
 }
-    const asesinos = document.getElementById('asesinos');
-    asesinos.addEventListener('click', onClickHandlerAssassin, false);
+const asesinos = document.getElementById('asesinos');
+asesinos.addEventListener('click', onClickHandlerAssassin, false);
+
+//Segundo boton
+
+const onClickHandlerFighter = () => {
+    let champFilter = obtenerCampeones(lol.data,'Fighter');
+
+    document.getElementById("championsCategory").style.visibility = "hidden";
+    document.getElementById("championList").style.visibility = "visible";
+
+    for (let i = 0; i < champFilter.length; i++) {
+        const item = document.createElement("INPUT");
+        item.setAttribute("type", "image");
+        item.setAttribute("id", "champ" + i);
+        item.setAttribute("src", champFilter[i].img);
+        document.getElementById("championList").appendChild(item);  
+    }
+
+    // mostrar grupo de campeones
+   
+}
+const luchadores = document.getElementById('luchadores');
+luchadores.addEventListener('click', onClickHandlerFighter, false);
+
+
 
 
 
