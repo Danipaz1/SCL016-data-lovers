@@ -4,6 +4,7 @@ import lol from './data/lol/lol.js';
 // Dar funcionalidad a los botones de categoria de campeones
 //   Usar eventListener para agregar click y llamar a la funcion obtener campeones
 
+
 //Primer botón Assassin---------------------------------------------------------------------
 
 const onClickHandlerAssassin = () => {
