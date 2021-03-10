@@ -17,7 +17,7 @@ const onClickHandlerAssassin = () => {
         item.setAttribute("type", "image");
         item.setAttribute("id", "champ" + i);
         item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
+        document.getElementById("championList").appendChild(item);
     }
 
     // mostrar grupo de campeones
