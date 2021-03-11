@@ -112,7 +112,6 @@ const transicion1 = () => {
     document.getElementById("championList").style.visibility = "visible";
 };
 
-<<<<<<< HEAD
 
 // TODO: Buscar campeones por tipo
 // Impotar data.js en main.js y pasarla al eventListener
@@ -120,7 +119,8 @@ const transicion1 = () => {
 
 
 // Mostrar categoria de campeones seleccionada
-=======
+
+
 const createInput = (champFilter) => {
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
@@ -132,4 +132,3 @@ const createInput = (champFilter) => {
         document.getElementById("championList").appendChild(item);  
     }
 };
->>>>>>> 2ce4de50ce5fc50308ed0afd4b82468c050d04e8
