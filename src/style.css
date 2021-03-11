@@ -2,9 +2,19 @@
     background-image: url('./data/imgs/1pantalla.jpg');
     display: flexbox;
     align-content: center; 
+<<<<<<< HEAD
     
 }
 
 #championsCategory {
     display: flex;
+=======
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#championList {
+    display: flex;
+    justify-content: center;
+>>>>>>> 2ce4de50ce5fc50308ed0afd4b82468c050d04e8
 }

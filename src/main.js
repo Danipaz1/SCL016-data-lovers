@@ -10,18 +10,11 @@ import lol from './data/lol/lol.js';
 const onClickHandlerAssassin = () => {
     let champFilter = obtenerCampeones(lol.data,'Assassin');
 
-    document.getElementById("championsCategory").style.visibility = "hidden";
-    document.getElementById("championList").style.visibility = "visible";
+    transicion1();
 
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
-    for (let i = 0; i < champFilter.length; i++) {
-        const item = document.createElement("INPUT");
-        item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
-        item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
-    }
+    createInput(champFilter);
 
     // mostrar grupo de campeones
    
@@ -34,16 +27,9 @@ asesinos.addEventListener('click', onClickHandlerAssassin, false);
 const onClickHandlerFighter = () => {
     let champFilter = obtenerCampeones(lol.data,'Fighter');
 
-    document.getElementById("championsCategory").style.visibility = "hidden";
-    document.getElementById("championList").style.visibility = "visible";
+    transicion1();
 
-    for (let i = 0; i < champFilter.length; i++) {
-        const item = document.createElement("INPUT");
-        item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
-        item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
-    }
+    createInput(champFilter);
 
     // mostrar grupo de campeones
    
@@ -56,18 +42,11 @@ luchadores.addEventListener('click', onClickHandlerFighter, false);
 const onClickHandlerMage = () => {
     let champFilter = obtenerCampeones(lol.data,'Mage');
 
-    document.getElementById("championsCategory").style.visibility = "hidden";
-    document.getElementById("championList").style.visibility = "visible";
+    transicion1();
 
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
-    for (let i = 0; i < champFilter.length; i++) {
-        const item = document.createElement("INPUT");
-        item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
-        item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
-    }
+    createInput(champFilter);
 
     // mostrar grupo de campeones
    
@@ -80,18 +59,11 @@ magos.addEventListener('click', onClickHandlerMage, false);
 const onClickHandlerMarksman = () => {
     let champFilter = obtenerCampeones(lol.data,'Marksman');
 
-    document.getElementById("championsCategory").style.visibility = "hidden";
-    document.getElementById("championList").style.visibility = "visible";
+    transicion1();
 
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
-    for (let i = 0; i < champFilter.length; i++) {
-        const item = document.createElement("INPUT");
-        item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
-        item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
-    }
+    createInput(champFilter);
 
     // mostrar grupo de campeones
    
@@ -104,18 +76,11 @@ tiradores.addEventListener('click', onClickHandlerMarksman, false);
 const onClickHandlerSupport = () => {
     let champFilter = obtenerCampeones(lol.data,'Support');
 
-    document.getElementById("championsCategory").style.visibility = "hidden";
-    document.getElementById("championList").style.visibility = "visible";
+    transicion1();
 
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
-    for (let i = 0; i < champFilter.length; i++) {
-        const item = document.createElement("INPUT");
-        item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
-        item.setAttribute("src", champFilter[i].img);
-        document.getElementById("championList").appendChild(item);  
-    }
+    createInput(champFilter);
 
     // mostrar grupo de campeones
    
@@ -128,9 +93,35 @@ soportes.addEventListener('click', onClickHandlerSupport, false);
 const onClickHandlerTank = () => {
     let champFilter = obtenerCampeones(lol.data,'Tank');
 
+    transicion1();
+
+    //Creando segunda pantalla de campeones según categoría
+    // Creando etiqueta input
+    createInput(champFilter);
+
+    // mostrar grupo de campeones
+   
+}
+const tanques = document.getElementById('tanques');
+tanques.addEventListener('click', onClickHandlerTank, false);
+
+
+//Funciones de ayuda
+const transicion1 = () => {
     document.getElementById("championsCategory").style.visibility = "hidden";
     document.getElementById("championList").style.visibility = "visible";
+};
 
+<<<<<<< HEAD
+
+// TODO: Buscar campeones por tipo
+// Impotar data.js en main.js y pasarla al eventListener
+
+
+
+// Mostrar categoria de campeones seleccionada
+=======
+const createInput = (champFilter) => {
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
     for (let i = 0; i < champFilter.length; i++) {
@@ -140,19 +131,5 @@ const onClickHandlerTank = () => {
         item.setAttribute("src", champFilter[i].img);
         document.getElementById("championList").appendChild(item);  
     }
-
-    // mostrar grupo de campeones
-   
-}
-const tanques = document.getElementById('tanques');
-tanques.addEventListener('click', onClickHandlerTank, false);
-
-
-
-
-// TODO: Buscar campeones por tipo
-// Impotar data.js en main.js y pasarla al eventListener
-
-
-
-// Mostrar categoria de campeones seleccionada
+};
+>>>>>>> 2ce4de50ce5fc50308ed0afd4b82468c050d04e8
