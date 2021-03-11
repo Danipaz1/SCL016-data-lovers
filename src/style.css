@@ -1,8 +1,10 @@
 .mainScreen {
+    margin: auto;
     display: flex; 
     background-image: url('./data/imgs/1pantalla.jpg');
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    justify-content:center;    
+    justify-content:space-around;
+    flex-wrap:wrap;      
     background-repeat: no-repeat;
     background-size: cover;
 }
