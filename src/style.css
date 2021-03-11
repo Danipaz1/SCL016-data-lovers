@@ -2,5 +2,11 @@
     background-image: url('./data/imgs/1pantalla.jpg');
     display: flex;
     align-content: center; 
-    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#championList {
+    display: flex;
+    justify-content: center;
 }
