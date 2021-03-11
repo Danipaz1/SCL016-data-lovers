@@ -1,6 +1,10 @@
 .mainScreen {
     background-image: url('./data/imgs/1pantalla.jpg');
-    display: flex;
+    display: flexbox;
     align-content: center; 
     
+}
+
+#championsCategory {
+    display: flex;
 }
