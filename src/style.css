@@ -1,27 +1,24 @@
 .mainScreen {
     margin: auto;
     display: flex; 
-    background-image: url('./data/imgs/1pantalla.jpg');
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    justify-content:space-around;
+    background-image: url('./data/imgs/1pantalla.jpg'); 
     flex-wrap:wrap;      
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#leagueOfLegends {
+.leagueOfLegends {
     display: flex;
-    justify-content:center;
 
 }
 
 #championsCategory {
-    display: block; 
+    display: ;
     justify-content: center;
     align-content: center;
 }    
 
 #championList {
-    display: block;
+    display: ;
     justify-content: center;
 }
