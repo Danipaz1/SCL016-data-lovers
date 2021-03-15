@@ -1,26 +1,31 @@
 .mainScreen {
-    margin: auto;
-    display: flex; 
+    display: block; 
     background-image: url('./data/imgs/1pantalla.jpg');
-    display: flex;
-    align-content: center; 
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 100vw;
+    max-height: 100vh;
+
+
 }
 
-#leagueOfLegends {
-    display: flex;
-    justify-content:center;
+.leagueOfLegends {
+    display: block;
+    margin: 0 auto;
+    width: 40% auto;
+    justify-content: center;
+
 
 }
 
 #championsCategory {
-    display: block; 
+    display: ;
     justify-content: center;
     align-content: center;
 }    
 
 #championList {
-    display: flex;
+    display: flex ;
     justify-content: center;
+    align-items: center;
 }
