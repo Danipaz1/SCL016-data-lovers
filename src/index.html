@@ -8,16 +8,16 @@
   </head>
   <body>
     <div id="root"></div>
+
     <main class="mainScreen">
       <div class="leagueOfLegends">
-        <h1>
           <img src="./data/imgs/lol.png" style="width:500px;height: 199.23px;">
-        </h1>
       </div>
-      <!--Este section se oculta al entrar a segunda pantalla-->
       
-      <section id="championsCategory">
-        <h2>Tipos de Campeones</h2> 
+      <h2 class="typesOfChampions">Tipos de Campeones</h2> 
+      
+      <!--Primera sección, se oculta al entrar a la segunda-->
+      <section id="championsCategory">  
         <input type="image" id="asesinos" class="marginChampions" src="./data/imgs/Akali_0.jpg">
         <input type="image" id="luchadores" class="marginChampions" src="./data/imgs/Diana_0.jpg">
         <input type="image" id="magos" class="marginChampions" src="./data/imgs/Ahri_0.jpg">
@@ -26,7 +26,8 @@
         <input type="image" id="tanques" class="marginChampions" src="./data/imgs/Warwick_0.jpg">
       </section>
     </main>
-
+    
+    <!--Segunda sección, se oculta al entrar a la tercera-->
     <section id="championList">
       <div id="championsByCategory"></div>
     </section>
