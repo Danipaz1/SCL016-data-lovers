@@ -127,8 +127,11 @@ const createInput = (champFilter) => {
     for (let i = 0; i < champFilter.length; i++) {
         const item = document.createElement("INPUT");
         item.setAttribute("type", "image");
-        item.setAttribute("id", "champ" + i);
+        item.setAttribute("id", champFilter[i].name);
         item.setAttribute("src", champFilter[i].img);
+        item.addEventListener('click', () => {
+            
+        });
         document.getElementById("championList").appendChild(item);  
     }
 };
