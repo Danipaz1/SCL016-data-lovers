@@ -109,7 +109,7 @@ tanques.addEventListener('click', onClickHandlerTank, false);
 //Funciones de ayuda
 const transicion1 = () => {
     document.getElementById("championsCategory").style.display = "none";
-    document.getElementById("championList").style.display = "block";
+    document.getElementById("championList").style.display = "flex";
 };
 
 
