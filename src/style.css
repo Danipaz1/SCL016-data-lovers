@@ -4,24 +4,17 @@
 }
 
 body {
-    background-image: url('./data/imgs/1pantalla.jpg');
-<<<<<<< HEAD
-    justify-content: center;
-    min-width: 100vw;
-    max-height: 100vh;
-=======
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./data/imgs/1pantalla.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #66999;
   
->>>>>>> 479484df5a6f139f0281846cdcac361c5a54b8bd
-  }
+}
 
   .mainScreen {
       
-  }
+}
 
 .leagueOfLegends {
     order:0;
