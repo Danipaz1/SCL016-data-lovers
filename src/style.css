@@ -11,16 +11,23 @@ body {
   }
 
 .leagueOfLegends {
-    display:block;
-    margin: 0 auto;
-    justify-content: center;
-    width: 500px;
+    order:0;
+    align-self:auto;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items:unset;
+    align-content:center;
 }
 
 #championsCategory {
-    justify-content: center;
-    min-width: 100vw;
-    max-height: 100vh;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:unset;
+    align-content:center;
+    height:100vh;
 }    
 
 .typesOfChampions {
@@ -48,8 +55,17 @@ body {
 }
 
 #championList {
-    background-image: url('');
-    display: flex ;
-    justify-content: center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
     align-items: center;
+    align-content:center;
+    margin: auto;
+    width: 400px;
+    height: 200px
+}
+
+#championsByCategory {
+    display: flex;
 }
