@@ -5,6 +5,8 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="./data/imgs/iconolol.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   </head>
   <body class="kindredBackground">
     <div id="root"></div>
@@ -44,11 +46,19 @@
     </main>
     
     <!--Segunda sección, se oculta al entrar a la tercera-->
+      <div class="searchAndOrder">
+        <input type="text" id="search" class="filter" placeholder="Búsqueda...">
+        <input type="text" id="order" class="filter" placeholder="Ordenar por...">
+      </div>
+
+      <div id="btnTiposDeCampeones">
+        <button class="returnButton">Tipos de campeones</button>
+      </div>
 
       <section id="championList">
+        
         <div id="championsByCategory"></div>
       </section>
-    </main> 
 
       <section id="champInformation"></section>
 
