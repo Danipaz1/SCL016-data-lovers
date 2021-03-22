@@ -44,16 +44,23 @@
   order:0;
   flex:0 1 auto;
   align-self:auto;
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
 }
 
-.leagueOfLegends {
+.leagueOfLegends { 
     display: flex;
+<<<<<<< HEAD
     width: 500px;
     height: 199,23px;
+=======
+>>>>>>> 27f8314c39c096c503a136561f164ea83e0fb38b
     justify-content: center;
     align-items: center;
+}
+
+img {
+    width: 500px;
 }
 
 .typesOfChampions {
