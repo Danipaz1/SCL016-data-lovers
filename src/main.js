@@ -1,9 +1,6 @@
 import { obtenerCampeones } from './data.js';
 import lol from './data/lol/lol.js';
 
-// Dar funcionalidad a los botones de categoria de campeones
-//   Usar eventListener para agregar click y llamar a la funcion obtener campeones
-
 
 //Primer botón Assassin---------------------------------------------------------------------
 
@@ -110,6 +107,7 @@ tanques.addEventListener('click', onClickHandlerTank, false);
 const transicion1 = () => {
     document.getElementById("championsCategory").style.display = "none";
     document.getElementById("championList").style.display = "flex";
+    document.body.className = 'rivenBackground';
 };
 
 
@@ -125,13 +123,42 @@ const createInput = (champFilter) => {
     //Creando segunda pantalla de campeones según categoría
     // Creando etiqueta input
     for (let i = 0; i < champFilter.length; i++) {
+        const section = document.createElement("SECTION");
+        section.setAttribute("class", "inputAndLabel");
+
         const item = document.createElement("INPUT");
         item.setAttribute("type", "image");
         item.setAttribute("id", champFilter[i].name);
         item.setAttribute("src", champFilter[i].img);
-        item.addEventListener('click', () => {
-            
+        item.setAttribute("class", 'inputChamp');
+
+        item.addEventListener('mouseover', () => {
+            showLabel("champ" + i);
         });
-        document.getElementById("championList").appendChild(item);  
+        item.addEventListener('mouseout', () => {
+            hideLabel("champ" + i);
+        });
+        item.addEventListener('click', () => {
+            console.log(champFilter[i]);
+        });
+
+// Se crea label para ir mostrando los nombres de los campeones llamados
+        const label = document.createElement("LABEL");
+        label.setAttribute("for", champFilter[i].name);
+        label.setAttribute("id", 'champ' + i);
+        label.setAttribute("class", 'hideLabel');
+        label.innerHTML = champFilter[i].name;
+
+        section.appendChild(item);
+        section.appendChild(label);
+        document.getElementById("championList").appendChild(section);
     }
+};
+
+const showLabel = (id) => {
+    document.getElementById(id).className = "tooltiptext showLabel";
+};
+
+const hideLabel = (id) => { 
+    document.getElementById(id).className = "hideLabel";
 };

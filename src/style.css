@@ -3,13 +3,20 @@
     margin: 0;
 }
 
-body {
+.kindredBackground {
     background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./data/imgs/1pantalla.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-  
+}
+
+.rivenBackground {
+    background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./data/imgs/Riven.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .mainScreen {
@@ -42,9 +49,11 @@ body {
 }
 
 .leagueOfLegends {
-    width:500px;
+    display: flex;
+    width: 100%;
     height: 199.23px;
-    justify-content:center;
+    justify-content: center;
+    align-items: center;
 }
 
 .typesOfChampions {
@@ -116,3 +125,34 @@ h2 {
 #championsByCategory {
     display: flex;
 }
+
+
+  .tooltiptext {
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    z-index: 1;
+  }
+  
+  .showLabel {
+    visibility: visible;
+  }
+
+  .hideLabel {
+    display: none;
+  }
+
+  .inputAndLabel {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 60px;
+  }
+
+  .inputChamp {
+      max-width: 60px;
+  }
