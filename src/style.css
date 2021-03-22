@@ -44,20 +44,18 @@
   order:0;
   flex:0 1 auto;
   align-self:auto;
-  height:auto;
-  width:auto;
+  height: auto;
+  width: auto;
 }
 
-.leagueOfLegends {
+.leagueOfLegends { 
     display: flex;
-<<<<<<< HEAD
-    width: 100%;
-=======
-    width:500px;
->>>>>>> e706f72758cfa9868c6f831f7cfc6d17f74c5b5f
-    height: 199.23px;
     justify-content: center;
     align-items: center;
+}
+
+img {
+    width: 500px;
 }
 
 .typesOfChampions {
@@ -114,15 +112,6 @@ h2 {
     height: 520px;
 }
 
-.secondScreen {
-    display:flex;
-    background-image: url(./data/imgs/Riven.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    height:100vh;
-}
 
 #championList {
     display:flex;
