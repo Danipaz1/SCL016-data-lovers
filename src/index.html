@@ -13,7 +13,7 @@
 
     <main class="mainScreen">
 
-      <section class="titles">
+      <section class="titles" id="initialTitle">
        <div class="leagueOfLegends">
         <img src="./data/imgs/lol.png">
        </div>
@@ -46,7 +46,7 @@
     </main>
     
     <!--Segunda sección, se oculta al entrar a la tercera-->
-      <div class="searchAndOrder">
+      <div class="searchAndOrder" id="sort">
         <input type="text" id="search" class="filter" placeholder="Búsqueda...">
         <input type="text" id="order" class="filter" placeholder="Ordenar por...">
       </div>
@@ -60,7 +60,23 @@
         <div id="championsByCategory"></div>
       </section>
 
-      <section id="champInformation"></section>
+      <section id="champInformation">
+        <p id="champIntro"></p>
+        <h1 id="champName"></h1>
+        <button id="returnSelection">Selección de campeones</button>
+
+        <div id="champBackground">
+          <div id="champStory">
+            <p id="story"></p>
+            <p id="attack"></p>
+            <p id="defense"></p>
+            <p id="magic"></p>
+            <p id="difficulty"></p>
+          </div>
+
+        </div>
+      </section>
+    
 
     <script src="main.js" type="module"></script>
   </body>

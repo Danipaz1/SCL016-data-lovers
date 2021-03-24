@@ -107,13 +107,19 @@ tanques.addEventListener('click', onClickHandlerTank, false);
 const transicion1 = () => {
     document.getElementById("championsCategory").style.display = "none";
     document.getElementById("championList").style.display = "flex";
+    document.getElementById("btnTiposDeCampeones").style.display = "flex";
     document.body.className = 'rivenBackground';
 };
 
-
-// TODO: Buscar campeones por tipo
-// Impotar data.js en main.js y pasarla al eventListener
-
+const transicion2 = () => {
+    document.getElementById("championsCategory").style.display = "none";
+    document.getElementById("championList").style.display = "none";
+    document.getElementById("initialTitle").style.display = "none";
+    document.body.className = "backgroundWithOpacity";
+    document.getElementById("sort").style.display = "none";
+    document.getElementById("btnTiposDeCampeones").style.display = "none";
+    
+}
 
 
 // Mostrar categoria de campeones seleccionada
@@ -139,7 +145,9 @@ const createInput = (champFilter) => {
             hideLabel("champ" + i);
         });
         item.addEventListener('click', () => {
-            console.log(champFilter[i]);
+            transicion2();
+            document.body.style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
+            document.getElementById("champIntro").innerHTML = champFilter[i].title;
         });
 
 // Se crea label para ir mostrando los nombres de los campeones llamados
