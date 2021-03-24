@@ -66,11 +66,11 @@
 }
 
 .titles {
-  order:0;
-  flex:0 1 auto;
-  align-self:auto;
-  height: auto;
-  width: auto;
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height: auto;
+    width: auto;
 }
 
 .leagueOfLegends { 
@@ -83,9 +83,46 @@ img {
     width: 500px;
 }
 
+.intro {
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 3px;
+    width: 1280px;
+    height: 718px;
+    margin-top: 3%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
+.information {
+    font-family: Friz Quadrata;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #F3EFEF;
+    
+}
+
+
+h3 {
+    font-style: italic;
+}
+
 .typesOfChampions {
+    display:flex;
     justify-content:center;
     align-content:center;
+    flex-direction: center;
+    margin-top: 6%;
 }
 
 h2 {
@@ -104,10 +141,10 @@ h2 {
 
 #championsCategory {
     display:flex;
-    flex-direction:row;
+    flex-direction:wrap;
     flex-wrap:wrap;
     justify-content:center;
-    align-items:unset;
+    align-items:center;
     align-content:center;
     height:100vh;
 }
