@@ -151,10 +151,10 @@ const createInput = (champFilter) => {
             document.getElementById("champName").innerHTML = champFilter[i].name;
             document.getElementById("champBackground").style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
             document.getElementById("story").innerHTML = champFilter[i].blurb;
-            document.getElementById("attack").innerHTML = champFilter[i].info.attack;
-            document.getElementById("defense").innerHTML = champFilter[i].info.defense;
-            document.getElementById("magic").innerHTML = champFilter[i].info.magic;
-            document.getElementById("difficulty").innerHTML = champFilter[i].info.difficulty;
+            document.getElementById("attack").innerHTML = ( "Attack " + champFilter[i].info.attack);
+            document.getElementById("defense").innerHTML = ("Defense " + champFilter[i].info.defense);
+            document.getElementById("magic").innerHTML = ("Magic " + champFilter[i].info.magic);
+            document.getElementById("difficulty").innerHTML = ("Difficulty " + champFilter[i].info.difficulty);
            
         });
 
