@@ -109,6 +109,7 @@ const transicion1 = () => {
     document.getElementById("championList").style.display = "flex";
     document.getElementById("btnTiposDeCampeones").style.display = "flex";
     document.body.className = 'rivenBackground';
+    document.getElementById("sort").style.display = "flex";
 };
 
 const transicion2 = () => {
@@ -118,10 +119,9 @@ const transicion2 = () => {
     document.body.className = "backgroundWithOpacity";
     document.getElementById("sort").style.display = "none";
     document.getElementById("btnTiposDeCampeones").style.display = "none";
-    
-}
-
-
+    document.getElementById("champInformation").className = "containerChampInformation"
+    document.getElementById("champStory").className = "containerChampStory"
+};
 // Mostrar categoria de campeones seleccionada
 
 
@@ -148,6 +148,14 @@ const createInput = (champFilter) => {
             transicion2();
             document.body.style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
             document.getElementById("champIntro").innerHTML = champFilter[i].title;
+            document.getElementById("champName").innerHTML = champFilter[i].name;
+            document.getElementById("champBackground").style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
+            document.getElementById("story").innerHTML = champFilter[i].blurb;
+            document.getElementById("attack").innerHTML = champFilter[i].info.attack;
+            document.getElementById("defense").innerHTML = champFilter[i].info.defense;
+            document.getElementById("magic").innerHTML = champFilter[i].info.magic;
+            document.getElementById("difficulty").innerHTML = champFilter[i].info.difficulty;
+           
         });
 
 // Se crea label para ir mostrando los nombres de los campeones llamados

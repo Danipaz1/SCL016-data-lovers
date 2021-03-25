@@ -55,6 +55,16 @@
     background-size: cover;
 }
 
+.champBackground {
+    width: 80%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 10;
+    align-self: center;
+}
+
 .mainScreen {
     display:flex;
     flex-direction:column;
@@ -225,4 +235,30 @@ color: #FFFFFF;
       display: none;
   }
 
-  
+  .containerChampInformation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .containerChampStory {
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      background-color: rgb(106 106 106 / 61%);
+      width: 30%;
+  }
+
+  .pStory {
+    color: rgb(255, 255, 255);
+  }
+
+  #champIntro {
+    z-index: 1;
+  }
+
+  #champName {
+    z-index: 1;
+  }
