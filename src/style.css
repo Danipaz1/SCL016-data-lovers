@@ -100,6 +100,7 @@ img {
     width: 1280px;
     height: 718px;
     margin-top: 3%;
+    
 
     display: flex;
     flex-wrap: wrap;
@@ -109,12 +110,13 @@ img {
 .information {
     font-family: Friz Quadrata;
     font-style: normal;
-    font-weight: 450;
+    font-weight: auto;
     font-size: 25px;
     line-height: auto;
     text-align: center;
 
     color: #ffffffc0;
+    margin: 3%;
     
 }
 
@@ -344,7 +346,7 @@ h2 {
   }
 
   #champStory:hover {
-    font-size: 27px;
+    font-size: 28px;
     background-color: rgba(0, 0, 0, 0.596);
 
   }
