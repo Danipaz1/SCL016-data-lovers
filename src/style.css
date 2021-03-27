@@ -94,8 +94,8 @@ img {
 }
 
 .intro {
-    overflow-y: scroll;
-    background: rgba(0, 0, 0, 0.87);
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.85);
     border-radius: 3px;
     width: 1280px;
     height: 718px;
@@ -109,18 +109,12 @@ img {
 .information {
     font-family: Friz Quadrata;
     font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
+    font-weight: 450;
+    font-size: 25px;
     line-height: auto;
     text-align: center;
 
-    color: #F3EFEF;
-
-    order:0;
-    flex:0 1 auto;
-    align-self:auto;
-    height:auto;
-    width:auto;
+    color: #ffffffc0;
     
 }
 
@@ -137,6 +131,10 @@ img {
 
 }
 
+#gif {
+    margin-top: 3%;
+}
+
 #mapa{
     margin-top: 15%;
 }
@@ -151,6 +149,7 @@ img {
 
 
 h3 {
+    text-shadow: 0px 4px 4px #dbaa23;
     font-style: italic;
     text-align: center;
     margin-top: 4%;
@@ -176,9 +175,10 @@ h2 {
     line-height: 45px;
     text-align: center;
     
+    
     color: #FFFFFF;
     
-    text-shadow: 0px 4px 4px #000000;
+    text-shadow: 0px 6px 6px #000000;
 }
 
 
@@ -250,7 +250,7 @@ h2 {
     font-size: 18px;
     line-height: 21px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 #championList {
@@ -310,25 +310,65 @@ color: #FFFFFF;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    color: white;
+
+
+    font-family: Friz Quadrata;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    text-shadow: 0px 6px 6px #000000;
   }
 
   .containerChampStory {
       display: flex;
       justify-content: left;
       flex-direction: column;
-      background-color: rgb(106 106 106 / 61%);
-      width: 30%;
+      overflow-y: auto;
+      width: 435px;
+      height: 565px;
+
+      background: rgba(71, 69, 69, 0.671);
   }
 
   .pStory {
-    color: rgb(255, 255, 255);
+    font-size: 24px;
+  }
+
+  #champStory {
+
+    font-size: 24px;
+  }
+
+  #champStory:hover {
+    font-size: 27px;
+    background-color: rgba(0, 0, 0, 0.596);
+
+  }
+
+  .pAttack {
+    color:rgb(255, 0, 0);
+  }
+
+  .pDefense {
+    color:rgb(34, 141, 39);
+  }
+
+  .pMagic {
+    color:rgb(90, 209, 245);
+  }
+
+  .pDifficulty {
+    color:rgb(226, 22, 236);
   }
 
   #champIntro {
     z-index: 1;
   }
-
+ 
   #champName {
     z-index: 1;
   }
