@@ -110,6 +110,10 @@ const transicion1 = () => {
     document.getElementById("btnTiposDeCampeones").style.display = "flex";
     document.body.className = 'rivenBackground';
     document.getElementById("sort").style.display = "flex";
+    document.getElementById("introduccion").style.display = "none";
+    document.getElementById("firstTitle").style.display = "none";
+    document.getElementById("returnSelection").style.display = "none";
+
 };
 
 const transicion2 = () => {
@@ -121,6 +125,8 @@ const transicion2 = () => {
     document.getElementById("btnTiposDeCampeones").style.display = "none";
     document.getElementById("champInformation").className = "containerChampInformation"
     document.getElementById("champStory").className = "containerChampStory"
+    document.getElementById("firstTitle").style.display = "none";
+    document.getElementById("returnSelection").style.display = "block";
 };
 // Mostrar categoria de campeones seleccionada
 
@@ -178,3 +184,32 @@ const showLabel = (id) => {
 const hideLabel = (id) => { 
     document.getElementById(id).className = "hideLabel";
 };
+
+const returnPageOne = () => { 
+    document.getElementById("championsCategory").style.display = "flex";
+    document.getElementById("introduccion").style.display = "flex";
+    document.getElementById("championList").style.display = "none";
+    document.getElementById("firstTitle").style.display = "flex";
+    document.getElementById("sort").style.display = "none";
+    document.getElementById("returnButton").style.display = "none";
+    document.body.className = 'kindredBackground';
+
+}
+const button1 = document.getElementById('returnButton');
+button1.addEventListener('click', returnPageOne, false);
+
+//Boton seleccion de campeones
+
+const returnPagetwo = () => { 
+    document.getElementById("championList").style.display = "flex";
+    document.getElementById("champInformation").style.display = "none";
+    document.getElementById("sort").style.display = "flex";
+    document.getElementById("btnTiposDeCampeones").style.display = "flex";
+    document.getElementById("initialTitle").style.display = "flex";
+    document.body.className = 'rivenBackground';
+    document.body.style = '';
+
+
+}
+const button2 = document.getElementById('returnSelection');
+button2.addEventListener('click', returnPagetwo, false);
