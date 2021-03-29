@@ -113,6 +113,7 @@ const transicion1 = () => {
     document.getElementById("introduccion").style.display = "none";
     document.getElementById("firstTitle").style.display = "none";
     document.getElementById("returnSelection").style.display = "none";
+    document.getElementById("champBackground").style.display = "none";
 
 };
 
@@ -184,7 +185,7 @@ const showLabel = (id) => {
 const hideLabel = (id) => { 
     document.getElementById(id).className = "hideLabel";
 };
-
+//Boton return tipos de campeones
 const returnPageOne = () => { 
     document.getElementById("championsCategory").style.display = "flex";
     document.getElementById("introduccion").style.display = "flex";
