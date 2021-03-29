@@ -114,6 +114,8 @@ const transicion1 = () => {
     document.getElementById("firstTitle").style.display = "none";
     document.getElementById("returnSelection").style.display = "none";
     document.getElementById("champBackground").style.display = "none";
+    document.getElementById("returnButton").style = "";
+    
 
 };
 
@@ -128,6 +130,8 @@ const transicion2 = () => {
     document.getElementById("champStory").className = "containerChampStory"
     document.getElementById("firstTitle").style.display = "none";
     document.getElementById("returnSelection").style.display = "block";
+    document.getElementById("champBackground").className = "champBackground";
+    document.getElementById("champInformation").style = "";
 };
 // Mostrar categoria de campeones seleccionada
 
@@ -194,6 +198,10 @@ const returnPageOne = () => {
     document.getElementById("sort").style.display = "none";
     document.getElementById("returnButton").style.display = "none";
     document.body.className = 'kindredBackground';
+    let championList  = document.getElementById("championList");
+    while (championList.firstChild) {
+        championList.removeChild(championList.firstChild);
+    }
 
 }
 const button1 = document.getElementById('returnButton');
@@ -209,7 +217,6 @@ const returnPagetwo = () => {
     document.getElementById("initialTitle").style.display = "flex";
     document.body.className = 'rivenBackground';
     document.body.style = '';
-
 
 }
 const button2 = document.getElementById('returnSelection');
