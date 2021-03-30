@@ -104,6 +104,7 @@ tanques.addEventListener('click', onClickHandlerTank, false);
 
 
 //Funciones de ayuda
+//Se oculta y se muestra lo que se quiere ver en la página 2
 const transicion1 = () => {
     document.getElementById("championsCategory").style.display = "none";
     document.getElementById("championList").style.display = "flex";
@@ -118,7 +119,7 @@ const transicion1 = () => {
     
 
 };
-
+//Se muestra y se oculta lo que se quiere ver en la página 3
 const transicion2 = () => {
     document.getElementById("championsCategory").style.display = "none";
     document.getElementById("championList").style.display = "none";
@@ -155,6 +156,7 @@ const createInput = (champFilter) => {
         item.addEventListener('mouseout', () => {
             hideLabel("champ" + i);
         });
+        //Todo esto corresponde a la página número 3
         item.addEventListener('click', () => {
             transicion2();
             document.body.style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
@@ -198,6 +200,7 @@ const returnPageOne = () => {
     document.getElementById("sort").style.display = "none";
     document.getElementById("returnButton").style.display = "none";
     document.body.className = 'kindredBackground';
+    
     let championList  = document.getElementById("championList");
     while (championList.firstChild) {
         championList.removeChild(championList.firstChild);
