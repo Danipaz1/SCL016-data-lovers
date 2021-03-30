@@ -288,7 +288,7 @@ h2 {
 
 
   .tooltiptext {
-    width: auto;
+    width: 80px;
     background-color: black;
     color: #fff;
     text-align: center;
@@ -297,6 +297,7 @@ h2 {
   
     /* Position the tooltip */
     z-index: 1;
+    position: absolute;
   }
   
   .showLabel {
