@@ -397,11 +397,11 @@ h2 {
   }
 
   footer{
-       font-family: Electrolize;
+    font-family: Electrolize;
     font-style: normal;
     font-weight:bolder;
     font-size: 22px;
     line-height: 45px;
     text-align: center;
-    color: #000000;
+    color: #f0f0f0;
   }
