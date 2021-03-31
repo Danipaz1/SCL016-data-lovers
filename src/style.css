@@ -396,7 +396,7 @@ h2 {
       display: none;
   }
 
-  footer{
+  #lolpage{
     font-family: Electrolize;
     font-style: normal;
     font-weight:bolder;
@@ -404,4 +404,5 @@ h2 {
     line-height: 45px;
     text-align: center;
     color: #f0f0f0;
+    position: relative;
   }
