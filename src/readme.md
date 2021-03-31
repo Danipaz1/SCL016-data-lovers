@@ -42,3 +42,11 @@ Aquí el link de la encuesta: https://docs.google.com/forms/d/e/1FAIpQLScgO9JP1o
 Con las respuestas, implementamos historias de usuario para definir las tareas y actividades a realizar. Gracias a este proceso, agregamos una sección de información al inicio, para usuarios que quisiran saber de qué se trataba Lol.
 
 ![Historias de Usuario](https://github.com/CarolinaMorales1992/SCL016-data-lovers/blob/master/src/data/imgs/historias.jpg)
+
+Tratamos que nuestro proyecto quedara lo más fiel posible al prototipo y a todo lo que pudimos recabar en el proceso de UX.
+
+# 4. Objetivos de aprendizaje y conclusión
+
+Cumplimos con nuestro objetivo principal de manipular la data de forma dinámica para proporcionar los datos que escogimos. También cumplimos con objetivos técnicos respecto al código y a la estética del producto. Sin embargo nos faltó darle funcionalidad a la barra de "búsqueda" y "ordenar por", además de realizar los test unitarios.
+
+Consideramos que el proceso de trabajo y colaboración fue bastante positivo, tratamos de crear un producto fiel al proceso de UX y de cumplir objetivos. Tuvimos la oportunidad de aprender tanto en el ámbito técnico como en el de trabajo en equipo y, como quedaron objetivos pendientes, sabemos que tenemos la responsabilidad y el compromiso de cumplirlos en el próximo proyecto. 
