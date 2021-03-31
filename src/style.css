@@ -288,7 +288,7 @@ h2 {
 
 
   .tooltiptext {
-    width: 80px;
+    width: auto;
     background-color: black;
     color: #fff;
     text-align: center;
