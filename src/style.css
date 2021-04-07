@@ -184,7 +184,7 @@ h2 {
 
 #championsCategory {
     display:flex;
-    flex-direction:wrap;
+    flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
@@ -277,8 +277,8 @@ h2 {
     align-items: center;
     align-content:center;
     margin: auto;
-    width: 700px;
-    height: 500px
+    width: 80%;
+    height: 70%;
 }
 
 

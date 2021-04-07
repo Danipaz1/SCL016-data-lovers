@@ -157,7 +157,11 @@ const createInput = (champFilter) => {
             hideLabel("champ" + i);
         });
         //Todo esto corresponde a la página número 3
-        item.addEventListener('click', () => {
+        item.addEventListener('click', (event) => {
+            console.log(event);
+            console.log(event.target);
+            console.log(event.target.id);
+            
             transicion2();
             document.body.style = "background-image:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('" + champFilter[i].splash + "')";
             document.getElementById("champIntro").innerHTML = champFilter[i].title;
