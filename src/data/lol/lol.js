@@ -1939,7 +1939,7 @@ export default {
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
       blurb:
-        "From the Journal of Professor Cecil B. Heimerdinger<br><br>10.14<br><br>09:15<br><br>Current meteorological conditions in Bandle City seem optimal. Atmospheric pressure is ideal for today's experiments!<br><br>Running a fifth trial for my ...",
+        "From the Journal of Professor Cecil B. Heimerdinger<br>Current meteorological conditions in Bandle City seem optimal. Atmospheric pressure is ideal for today's experiments!<br><br>Running a fifth trial for my ...",
       info: {
         attack: 2,
         defense: 6,
@@ -2667,7 +2667,7 @@ export default {
       splash:
         "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
       blurb:
-        "Driven by an intense killer instinct, Katarina uses her talents as an assassin for the glory of Noxus, and the continued elevation of her family. While her fervor drives her to ever-greater feats, it can sometimes lead her astray.<br><br>From ...",
+        "Driven by an intense killer instinct, Katarina uses her talents as an assassin for the glory of Noxus, and the continued elevation of her family. While her fervor drives her to ever-greater feats, it can sometimes lead her astray.",
       info: {
         attack: 4,
         defense: 3,
@@ -5835,9 +5835,9 @@ export default {
       name: "Twisted Fate",
       title: "the Card Master",
       img:
-        "https://www.masterypoints.com/assets/img/lol/champion_icons/Maokai.png",
+        "https://www.masterypoints.com/assets/img/lol/champion_icons/TwistedFate.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
       blurb:
         "Twisted Fate is an infamous card sharp and swindler who has gambled and charmed his way across much of the known world, earning the enmity and admiration of the rich and foolish alike. He rarely takes things seriously, greeting each day with a mocking ...",
       info: {

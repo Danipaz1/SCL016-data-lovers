@@ -1,0 +1,408 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.kindredBackground {
+    background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./data/imgs/1pantalla.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+@media screen and (max-width: 1200px){
+    .mainScreen { 
+        width: 40%,
+    }    
+}
+@media screen and (max-width: 600px){
+    .mainScreen{ 
+        width: 90%,
+    }
+}
+
+.rivenBackground {
+    background:linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./data/imgs/Riven.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.backgroundWithOpacity {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.backgroundWithOpacity:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.generalBackground {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.champBackground {
+    width: 80%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 10;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.mainScreen {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:center;
+    align-content:center;
+
+}
+
+.titles {
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height: auto;
+    width: auto;
+}
+
+.leagueOfLegends { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 500px;
+}
+
+.intro {
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 3px;
+    width: 1280px;
+    height: 718px;
+    margin-top: 3%;
+    
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.information {
+    font-family: Electrolize;
+    font-style: normal;
+    font-weight: auto;
+    font-size: 25px;
+    line-height: auto;
+    text-align: center;
+    color: #ffffffc0;
+    margin: 3%;
+    
+}
+
+#carril {
+    align-self:auto;
+    margin-top: 4%;
+}
+
+.carrilDescription {
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+}
+
+#gif {
+    margin-top: 3%;
+}
+
+#mapa{
+    margin-top: 15%;
+}
+
+.description {
+    
+    width: 600px;
+    height: 700px;
+    margin-top: 3%;
+
+}
+
+
+h3 {
+    text-shadow: 0px 4px 4px #dbaa23;
+    font-style: italic;
+    text-align: center;
+    margin-top: 4%;
+}
+
+p {
+    margin-top: 2%;
+}
+
+.typesOfChampions {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction: center;
+    margin-top: 6%;
+}
+
+h2 {
+    font-family: electrolize;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 6px #000000;
+}
+
+
+#championsCategory {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    height:100vh;
+}
+
+.namesCategory {
+    display: flex;
+    flex-direction: column;
+    font-family: electrolize;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px #000000;
+}
+
+
+.marginChampions{
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 3px; 
+    width: 200px;
+    height: 470px;
+}
+
+
+.searchAndOrder {
+    display:flex;
+    justify-content: center;
+}
+
+.filter {
+    margin-top: 50px;
+    width: 352px;
+    height: 38px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+}
+
+#btnTiposDeCampeones {
+    display: none;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.returnButton {
+    width: 210px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.74);
+    border: 2px solid #4AAFDA;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+    
+}
+
+.returnSelection {
+    width: 210px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.74);
+    border: 2px solid #4AAFDA;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    z-index: 1;
+    align-self: flex-end;
+    margin-right: 50px;
+    
+}
+
+#championList {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    align-content:center;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+}
+
+
+#championsByCategory {
+    display: flex;
+}
+
+
+  .tooltiptext {
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+   
+  
+    /* Position the tooltip */
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .showLabel {
+    visibility: visible;
+  }
+
+  .hideLabel {
+    display: none;
+  }
+
+  .inputAndLabel {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 60px;
+  }
+
+  .inputChamp {
+      max-width: 60px;
+  }
+
+  #sort {
+      display: none;
+  }
+
+  .containerChampInformation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+    font-family: Electrolize;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 6px #000000;
+  }
+
+  .containerChampStory {
+      display: flex;
+      justify-content: left;
+      flex-direction: column;
+      overflow-y: auto;
+      font-size: 22px;
+      width: 435px;
+      height: 565px;
+      border: 3px solid #080808;
+      border-radius: 1%;
+      margin-top: 4%;
+      margin-left: 4%;
+
+      background: rgba(110, 105, 105, 0.671);
+  }
+
+  .pStory {
+    font-size: 22px;
+  }
+
+  #champStory {
+
+    font-size: 22px;
+  }
+
+  #champStory:hover {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.596);
+    font-weight:bolder;
+    border: 3px solid #6d6b6b;
+
+  }
+
+  .pAttack {
+    color:rgb(255, 0, 0);
+  }
+
+  .pDefense {
+    color:rgb(34, 141, 39);
+  }
+
+  .pMagic {
+    color:rgb(90, 209, 245);
+  }
+
+  .pDifficulty {
+    color:rgb(226, 22, 236);
+  }
+
+  #champIntro, #champName {
+    z-index: 1;
+  }
+ 
+  .returnSelection, #championList {
+      display: none;
+  }
+
+  #lolpage{
+    font-family: Electrolize;
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    color: #f0f0f0;
+    position: relative;
+  }

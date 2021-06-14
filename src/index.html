@@ -4,9 +4,137 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./data/imgs/iconolol.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="kindredBackground">
     <div id="root"></div>
+
+    <main class="mainScreen">
+
+      <section class="titles" id="initialTitle">
+       <div class="leagueOfLegends">
+        <img src="./data/imgs/lol.png">
+       </div>
+      </section>
+
+      <section class="intro" id="introduccion">
+        <div class="information">
+          <h3>¿QUÉ ES LEAGUE OF LEGENDS?</h3>
+          <p>
+            League of Legends es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro. Elige de entre más de 140 campeones para realizar jugadas épicas, asegurar asesinatos y destruir torretas mientras avanzas hacia la victoria.
+          </p>
+        </div>
+        <div class="information">
+          <h3>¿CUÁL ES EL OBJETIVO?</h3>
+          <h3>DESTRUYE LA BASE</h3>
+          <p>
+            El nexo es el corazón de las bases de ambos equipos. Destruye el nexo enemigo para ganar la partida.
+          </p>
+        </div>
+        <div id="gif">
+          <img src="./data/imgs/lol.gif" alt="">
+        </div>
+        <div class="information" id="carril" >
+          <h3>ELIGE TU CARRIL</h3>
+          <p>
+            Hay cinco posiciones en la composición de equipo recomendada para una partida. Cada carril se presta más para el uso de cierto tipo de campeones y roles, pruébalos todos o juega en tu carril favorito.
+          </p>
+
+          <div class="carrilDescription">
+            <div id="mapa">
+              <img src="./data/imgs/mapa.jpg" alt="">
+            </div>
+            <div class="description">  
+              <h3>Carril superior</h3>
+                <p>
+                  Los campeones del carril superior son los fuertes luchadores en solitario del equipo. Su trabajo es proteger su carril y enfocarse en los miembros más poderosos del equipo enemigo.
+                </p>
+              <h3>Jungla</h3>
+                <p>
+                  Los jungleros viven para la caza. Acechan entre carriles con sigilo y habilidad, mantienen vigilados a los monstruos neutrales más importantes y atacan en cuanto un oponente baja la guardia.
+                </p>
+              <h3>Carril central</h3>
+                <p>
+                  Los campeones del carril central tienen un alto daño de ráfaga y pueden hacer de todo, tanto solos como en equipo. Para ellos, el combate es una peligrosa danza en la que siempre están buscando una oportunidad para superar a su oponente.
+                </p>
+              <h3>Carril inferior</h3>
+                <p>
+                  Los campeones del carril inferior son la dinamita del equipo. Al igual que un cargamento muy valioso, necesitan ser protegidos durante el juego temprano antes de obtener mucho oro y experiencia para llevar al equipo a la victoria.
+                </p>
+              <h3>Soporte</h3>
+                <p>
+                  Los campeones de soporte son los guardianes del equipo. Ayudan a mantener vivos a los miembros del equipo y a preparar el camino para los asesinatos, protegiendo a su compañero en el carril inferior hasta que se vuelve más fuerte.
+                </p>
+            </div>  
+          </div>
+        </div>
+
+      </section>
+      
+      <!--Primera sección, se oculta al entrar a la segunda-->
+      <div class="typesOfChampions" id="firstTitle">
+        <h2>TIPOS DE CAMPEONES</h2>
+      </div> 
+      <section id="championsCategory">
+        <div class = "namesCategory"> ASESINOS
+          <input type="image" id="asesinos" class="marginChampions" src="./data/imgs/Akali_0.jpg">
+        </div>
+        <div class = "namesCategory"> LUCHADORES
+          <input type="image" id="luchadores" class="marginChampions" src="./data/imgs/Diana_0.jpg">
+        </div>
+        <div class = "namesCategory"> MAGOS
+          <input type="image" id="magos" class="marginChampions" src="./data/imgs/Ahri_0.jpg">
+        </div>
+        <div class = "namesCategory"> TIRADORES
+          <input type="image" id="tiradores" class="marginChampions" src="./data/imgs/Caitlyn_0.jpg">
+        </div>
+        <div class = "namesCategory"> SOPORTES
+          <input type="image" id="soportes" class="marginChampions" src="./data/imgs/Lulu_0.jpg">
+        </div>
+        <div class = "namesCategory"> TANQUES
+          <input type="image" id="tanques" class="marginChampions" src="./data/imgs/Warwick_0.jpg">
+        </div>
+      </section>
+    </main>
+    
+    <!--Segunda sección, se oculta al entrar a la tercera-->
+      <div class="searchAndOrder" id="sort">
+        <input type="text" id="search" class="filter" placeholder="Búsqueda...">
+        <input type="text" id="order" class="filter" placeholder="Ordenar por...">
+      </div>
+
+      <div id="btnTiposDeCampeones">
+        <button class="returnButton" id="returnButton">Tipos de campeones</button>
+      </div>
+
+      <section id="championList">
+        <div id="championsByCategory"></div>
+      </section>
+
+      <section id="champInformation">
+        <p id="champIntro"></p>
+        <h1 id="champName"></h1>
+        <button id="returnSelection" class="returnSelection">Selección de campeones</button>
+
+        <div id="champBackground">
+          <div id="champStory">
+            <p id="story" class="pStory"></p>
+            <p id="attack" class="pAttack"></p>
+            <p id="defense" class="pDefense"></p>
+            <p id="magic" class="pMagic"></p>
+            <p id="difficulty" class="pDifficulty"></p>
+          </div>
+
+        </div>
+      </section>
+
+    <footer id="lolpage" class="piepagina">
+      <p> Para más información visita la página oficial</p>
+      <a href="https://na.leagueoflegends.com/es-mx/">League of Legends web site</a>
+    </footer>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
